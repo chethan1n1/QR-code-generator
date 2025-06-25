@@ -8,7 +8,6 @@ Supports dark/light mode toggle, smooth animations, and allows users to generate
 ## 📸 Demo
 
 **Live Preview:** [Click here to view](https://chethan1n1.github.io/QR-code-generator)  
-*(replace this with your actual GitHub Pages or deployed link if hosted)*
 
 ---
 

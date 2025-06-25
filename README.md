@@ -7,7 +7,7 @@ Supports dark/light mode toggle, smooth animations, and allows users to generate
 
 ## 📸 Demo
 
-**Live Preview:** [Click here to view](https://chethan1n1.github.io/QR-code-generator/)  
+**GitHub Pages:** [Click here to view](https://chethan1n1.github.io/QR-code-generator/)  
 **Vercel Hosted:** [Click here to view](https://qr-code-generator-kappa-jet.vercel.app/)
 
 ---

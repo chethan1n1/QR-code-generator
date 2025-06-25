@@ -1,0 +1,243 @@
+:root {
+  --bg-color: #f3f4f6;
+  --text-color: #12130f;
+  --subtitle-color: #5b5b5b;
+  --input-bg: #ffffff;
+  --button-bg: linear-gradient(135deg, #5b9279, #1b4332);
+  --button-hover: linear-gradient(135deg, #40916c, #1b4332);
+  --card-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-size-adjust: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-color) url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.heading {
+  margin: 3rem 0 4rem 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+.title {
+  font-size: 5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.7rem;
+  color: var(--subtitle-color);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  animation: fadeInUp 1.2s ease;
+}
+
+.user-input label {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.user-input input {
+  width: 80%;
+  max-width: 35rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--input-bg);
+  text-align: center;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.user-input input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  background: var(--button-bg);
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.qr-code {
+  margin-top: 2rem;
+  border: 0.5rem solid #5b9279;
+  border-radius: 1rem;
+  background: var(--card-bg);
+  padding: 2rem;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease;
+}
+
+.qr-code button {
+  display: flex;
+  justify-content: center;
+  background: #5b9279;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.qr-code button:hover {
+  background: #40916c;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.qr-code button a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.theme-toggle button {
+  background: transparent;
+  border: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.theme-toggle button:focus {
+  outline: none;
+}
+.download-btn {
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(135deg, #5b9279, #1b4332);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #40916c, #1b4332);
+  transform: translateY(-3px);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+.footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--subtitle-color);
+  animation: fadeInUp 1.5s ease;
+}
+
+.footer a {
+  color: #5b9279;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #40916c;
+  text-decoration: underline;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --subtitle-color: #d1d1d1;
+  --input-bg: #1e1e1e;
+  --button-bg: linear-gradient(135deg, #2d6a4f, #081c15);
+  --button-hover: linear-gradient(135deg, #52b788, #1b4332);
+  --card-bg: #1e1e1e;
+}

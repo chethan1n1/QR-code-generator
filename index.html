@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme">
+      <span id="theme-icon">🌙</span>
+    </button>
+  </div>
+
+  <section class="heading">
+    <div class="title">QRcodes</div>
+    <div class="sub-title">Generate QRCode for anything!</div>
+  </section>
+
+  <section class="user-input">
+    <label for="input_text">Type something...</label>
+    <input type="text" name="input_text" id="input_text" autocomplete="off">
+    <button class="button" type="submit">Generate QR Code</button>
+  </section>
+
+  <div class="qr-code" style="display: none;"></div>
+  <footer class="footer">
+  <p>Made with ❤️ by <a href="https://www.linkedin.com/in/chethan-yallampalli-b82681236/" target="_blank">Chethan Yallampalli</a></p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
